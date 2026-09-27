@@ -26,9 +26,7 @@ let remainingTasks = Number(taskCount.innerText);
 // ------------------------------
 // 3. Show Current Date
 // ------------------------------
-
 const today = new Date();
-
 currentDate.innerText = today.toDateString();
 
 
@@ -65,38 +63,24 @@ buttons.forEach((button) => {
         // --------------------------
         // Disable Completed Button
         // --------------------------
-
+       
         button.disabled = true;
+        
+        
 
-        button.innerText = "Completed";
 
-
-        // --------------------------
         // Create Activity
-        // --------------------------
-
         const activity = document.createElement("div");
-
         activity.classList.add("activity");
 
-
-        // --------------------------
         // Add Activity Content
-        // --------------------------
-
         activity.innerHTML = `
             <p>${companyName}</p>
             <p>${taskTitle}</p>
             <span>Completed</span>
         `;
-
-
-        // --------------------------
-        // Add Activity to Activity Log
-        // --------------------------
-
+        
+        // Add Activity to Activity Log 
         activityLog.appendChild(activity);
-
     });
-
 });

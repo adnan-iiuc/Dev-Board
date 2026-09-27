@@ -40,7 +40,7 @@ main {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(13, 206, 197, 0.08);
     margin:10px;
     flex: 1;
 }
@@ -95,6 +95,7 @@ main {
 }
 
 .activity-log {
+
     background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
